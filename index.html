@@ -74,9 +74,14 @@
   .brand-logo{height:30px; width:auto; display:block; flex-shrink:0;}
   .brand .name{font-family:'Inter',sans-serif; font-weight:800; font-size:17px; letter-spacing:0.02em; color:var(--ink);}
   .brand .name span{color:var(--ink-dim); font-weight:600;}
-  .navlinks{display:flex; flex-wrap:wrap; gap:20px; list-style:none; justify-content:flex-end;}
-  .navlinks a{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.09em; color:var(--ink-muted); padding-bottom:6px; border-bottom:2px solid transparent; transition:color .2s, border-color .2s; white-space:nowrap;}
-  .navlinks a:hover, .navlinks a.active{color:var(--gold-bright); border-bottom-color:var(--gold);}
+  .navlinks{display:flex; flex-wrap:wrap; gap:10px; list-style:none; justify-content:flex-end;}
+  .navlinks a{
+    font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--ink-muted); white-space:nowrap;
+    padding:8px 16px; border:1px solid var(--border-strong); border-radius:100px;
+    background:rgba(255,255,255,0.02); transition:color .2s, border-color .2s, background .2s;
+  }
+  .navlinks a:hover, .navlinks a.active{color:var(--gold-bright); border-color:var(--gold); background:rgba(201,162,74,0.10);}
 
   .nav-toggle{
     display:none; flex-direction:column; justify-content:center; gap:5px;
@@ -376,7 +381,8 @@
     .navlinks li{width:100%;}
     .navlinks a{
       display:block; width:100%; font-size:13px; padding:15px 24px;
-      border-bottom:1px solid var(--border); border-left:3px solid transparent;
+      border:none; border-bottom:1px solid var(--border); border-left:3px solid transparent; border-radius:0;
+      background:transparent;
     }
     .navlinks a:hover, .navlinks a.active{border-left-color:var(--gold); background:rgba(255,255,255,0.03);}
   }
@@ -415,21 +421,6 @@
   <section id="cover">
     <div class="cover-top">
       <img class="cover-image" src="capa-creci.png" alt="Da percepção à direção — Proposta de Consultoria para o CRECI-PI. Ensinar, construir e implementar junto. Proponente INETRIS, duração 6 meses, Setembro de 2026.">
-
-      <div class="quick-nav">
-        <a href="#quem-somos" class="pill active">Quem Somos</a>
-        <a href="#experiencia" class="pill">Experiência</a>
-        <a href="#desafio" class="pill">O Desafio</a>
-        <a href="#objetivos" class="pill">Objetivos</a>
-        <a href="#caminho" class="pill">O Caminho</a>
-        <a href="#jornada" class="pill">A Jornada</a>
-        <a href="#bases" class="pill">As Bases</a>
-        <a href="#cronograma" class="pill">Cronograma</a>
-        <a href="#o-que-muda" class="pill">O Que Muda</a>
-        <a href="#investimento" class="pill">Investimento</a>
-        <a href="#garantia" class="pill">Garantia</a>
-        <a href="#proximo-capitulo" class="pill">Encerramento</a>
-      </div>
     </div>
   </section>
 
